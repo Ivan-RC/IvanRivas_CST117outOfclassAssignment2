@@ -38,8 +38,9 @@
             this.checkBox4_whip = new System.Windows.Forms.CheckBox();
             this.radioButton4_extraLarge = new System.Windows.Forms.RadioButton();
             this.btn1_Order = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // listBox1_drinks
@@ -47,14 +48,16 @@
             this.listBox1_drinks.FormattingEnabled = true;
             this.listBox1_drinks.ItemHeight = 16;
             this.listBox1_drinks.Items.AddRange(new object[] {
-            "Coffee",
-            "Tea",
-            "Milkshake",
-            "Orange Juice",
-            "Apple Juice"});
-            this.listBox1_drinks.Location = new System.Drawing.Point(84, 52);
+            "coffee",
+            "tea",
+            "milkshake",
+            "orange juice",
+            "apple juice",
+            "smoothie",
+            "water"});
+            this.listBox1_drinks.Location = new System.Drawing.Point(11, 21);
             this.listBox1_drinks.Name = "listBox1_drinks";
-            this.listBox1_drinks.Size = new System.Drawing.Size(164, 148);
+            this.listBox1_drinks.Size = new System.Drawing.Size(164, 84);
             this.listBox1_drinks.TabIndex = 0;
             // 
             // radioButton1_small
@@ -156,31 +159,30 @@
             this.btn1_Order.UseVisualStyleBackColor = true;
             this.btn1_Order.Click += new System.EventHandler(this.btn1_Order_Click);
             // 
-            // label1
+            // groupBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(340, 17);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Choose the drink you want and what size you want it.";
+            this.groupBox1.Location = new System.Drawing.Point(84, 206);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(211, 144);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Extras";
             // 
-            // label2
+            // groupBox2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(81, 214);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(275, 17);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Chose what you\'d like to add to your drink.";
+            this.groupBox2.Controls.Add(this.listBox1_drinks);
+            this.groupBox2.Location = new System.Drawing.Point(73, 29);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(358, 178);
+            this.groupBox2.TabIndex = 13;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Drinks and sizes";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(949, 559);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn1_Order);
             this.Controls.Add(this.radioButton4_extraLarge);
             this.Controls.Add(this.checkBox4_whip);
@@ -190,9 +192,11 @@
             this.Controls.Add(this.radioButton3_large);
             this.Controls.Add(this.radioButton2_medium);
             this.Controls.Add(this.radioButton1_small);
-            this.Controls.Add(this.listBox1_drinks);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Ivan\'s drinks";
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,8 +214,8 @@
         private System.Windows.Forms.RadioButton radioButton4_extraLarge;
         private System.Windows.Forms.Button btn1_Order;
         private System.Windows.Forms.RadioButton radioButton2_medium;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 

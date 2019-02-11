@@ -26,25 +26,33 @@ namespace IvanRivas_CST117outOfclassAssignment2
             switch (drink)
             {
 
-                case "Coffee":
+                case "coffee":
                     MessageBox.Show("Coffee coming right up.");
                     break;
 
 
-                case "Tea":
+                case "tea":
                     MessageBox.Show("Tea coming right up.");
                     break;
 
-                case "Milkshake":
+                case "milkshake":
                     MessageBox.Show("Milkshake coming up.");
                     break;
 
-                case "Orange Juice":
+                case "orange juice":
                     MessageBox.Show("Orange Juice is on the way.");
                     break;
 
-                case "Apple Juice":
+                case "apple Juice":
                     MessageBox.Show("Apple Juice is on the way.");
+                    break;
+
+                case "smoothie":
+                    MessageBox.Show("Smoothie it is.");
+                    break;
+
+                case "water":
+                    MessageBox.Show("You sure? Well okay.");
                     break;
 
             }
@@ -75,7 +83,7 @@ namespace IvanRivas_CST117outOfclassAssignment2
 
             }
         }
-
+        //Extras
         private void checkBox1_sugar_CheckedChanged(object sender, EventArgs e)
         {
             MessageBox.Show("Your drink will have sugar.");
